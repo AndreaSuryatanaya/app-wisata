@@ -10,16 +10,8 @@ import { apiClient } from "./client";
  * - `status` param must exist and have value of `'posted'`
  */
 export async function getDiaryFeed() {
-  const ids = [
-    359007, 358317, 343275, 342861, 342723, 342240, 341343, 296907, 253782,
-    177123,
-  ];
-  // ...
-  const params = new URLSearchParams();
-  ids.forEach((id) => params.append("id", id));
-  params.append("status", "posted");
-
-  return apiClient(`/cms/diary?${params.toString()}`);
+    const ids = [359007, 358317, 343275, 342861, 342723, 342240, 341343, 296907, 253782, 177123];
+    // ...
 }
 
 /**
@@ -32,11 +24,5 @@ export async function getDiaryFeed() {
  * - `status` param must exist and have value of `'posted'`
  */
 export async function getDiaryContentById(id) {
-  // ...
-  const params = new URLSearchParams({
-    id: id.toString(),
-    status: "posted",
-  });
-
-  return apiClient(`/cms/diary?${params.toString()}`);
+    // ...
 }
