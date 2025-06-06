@@ -17,6 +17,6 @@ You may put any documentation or notes related to your submission here.
 
 to run this application you can write this
 
-cd app
-npm i
-npm run dev
+`cd app`
+`npm i`
+`npm run dev`
